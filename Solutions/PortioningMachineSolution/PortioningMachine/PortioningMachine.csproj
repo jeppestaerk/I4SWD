@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EC520ECE-2AFB-4440-B43B-C43AF7D55D8F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PortioningMachine</RootNamespace>
+    <AssemblyName>PortioningMachine</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Factories\IPortionerMachineFactory.cs" />
+    <Compile Include="Factories\MultipleOfMeanPortionerMachineFactory.cs" />
+    <Compile Include="Factories\RoundRobinPortionerMachineFactory.cs" />
+    <Compile Include="Logs\FileTextLog.cs" />
+    <Compile Include="ItemProviders\GaussianDistribution.cs" />
+    <Compile Include="ItemProviders\IItemProvider.cs" />
+    <Compile Include="ItemScorers\IItemScorer.cs" />
+    <Compile Include="Logs\TextLog.cs" />
+    <Compile Include="SystemComponents\Bin.cs" />
+    <Compile Include="Logs\SimpleTextLog.cs" />
+    <Compile Include="SystemComponents\Control.cs" />
+    <Compile Include="SystemComponents\IBin.cs" />
+    <Compile Include="SystemComponents\IItem.cs" />
+    <Compile Include="Logs\ILog.cs" />
+    <Compile Include="ItemScorers\MultipleOfMeanItemScorer.cs" />
+    <Compile Include="PortioningAlgorithms\BinScorePortioningAlgorithm.cs" />
+    <Compile Include="PortioningAlgorithms\IPortioningAlgorithm.cs" />
+    <Compile Include="SystemComponents\Item.cs" />
+    <Compile Include="SystemComponents\PortioningControlException.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PortioningAlgorithms\RoundRobinPortioningAlgorithm.cs" />
+    <Compile Include="ItemScorers\SimpleItemScorer.cs" />
+    <Compile Include="ItemProviders\ItemProvider.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

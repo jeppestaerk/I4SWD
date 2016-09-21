@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D98B6B73-33F2-45DE-8C50-6B3CA3F02497}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CompressionStocking</RootNamespace>
+    <AssemblyName>CompressionStocking</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Devices\Compression\LaceTighteningDevice.cs" />
+    <Compile Include="Mechanisms\Compression\AirCompressionMechanism.cs" />
+    <Compile Include="BusinessLogic\IButtonHandler.cs" />
+    <Compile Include="BusinessLogic\ICompressionEventListener.cs" />
+    <Compile Include="Devices\UserInterface\ITwoStateUnit.cs" />
+    <Compile Include="Devices\Compression\IPump.cs" />
+    <Compile Include="Devices\Compression\ILaceTighteningDevice.cs" />
+    <Compile Include="Mechanisms\Compression\CompressionMechanism.cs" />
+    <Compile Include="Mechanisms\UserInterface\IUserOutput.cs" />
+    <Compile Include="Devices\UserInterface\LED.cs" />
+    <Compile Include="Devices\Compression\Pump.cs" />
+    <Compile Include="BusinessLogic\StockingCtrl.cs" />
+    <Compile Include="Mechanisms\Compression\ICompressionMechanism.cs" />
+    <Compile Include="Mechanisms\Compression\LaceCompressionMechanism.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Mechanisms\UserInterface\UserOutput.cs" />
+    <Compile Include="Devices\UserInterface\Vibrator.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
