@@ -4,16 +4,34 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Interface1", "Interface1", "{0A88F96E-5D2D-432E-9934-395FECB80D24}"
+	ProjectSection(SolutionItems) = preProject
+		Interface1\1 - C# interfaces 1.pdf = Interface1\1 - C# interfaces 1.pdf
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CardGame", "CardGame", "{79557723-63E9-48DA-83DD-3735E02FC340}"
+	ProjectSection(SolutionItems) = preProject
+		CardGame\OO Basics 0 - Card Game.pdf = CardGame\OO Basics 0 - Card Game.pdf
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ReportGenerator", "ReportGenerator", "{3DE7129D-4177-41E0-A36A-A05D652B158D}"
+	ProjectSection(SolutionItems) = preProject
+		ReportGenerator\SOLID 1 - ReportGenerator.pdf = ReportGenerator\SOLID 1 - ReportGenerator.pdf
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CompressionStocking", "CompressionStocking", "{D7C6B19A-0EE6-484D-A389-8A7A0E2380C4}"
+	ProjectSection(SolutionItems) = preProject
+		CompressionStocking\SOLID 2 - Compression Stocking.pdf = CompressionStocking\SOLID 2 - Compression Stocking.pdf
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PortioningMachine", "PortioningMachine", "{5BE2835A-BB30-467B-B040-11B9C3641943}"
+	ProjectSection(SolutionItems) = preProject
+		PortioningMachine\SOLID 1+2 - Portioning machine.pdf = PortioningMachine\SOLID 1+2 - Portioning machine.pdf
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GoFObserver", "GoFObserver", "{CCE64AD2-8D25-432A-8A1A-31108D32C51A}"
+	ProjectSection(SolutionItems) = preProject
+		GoFObserver\08 Patterns - Observer.pdf = GoFObserver\08 Patterns - Observer.pdf
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CardGame", "CardGame\CardGame\CardGame.csproj", "{2D914BDE-445D-43B7-AAA6-6489D231F6B2}"
 EndProject
@@ -66,6 +84,9 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReportGenerator", "Solutions\ReportGeneratorSolution\ReportGeneratorSolution\ReportGenerator.csproj", "{CF6CD745-C893-4270-9AC2-8AAD0AE72F3D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Interface2", "Interface2", "{BEA7DC0D-69D7-4827-9FFA-8496B64CDE82}"
+	ProjectSection(SolutionItems) = preProject
+		Interface2\2 - C# Interfaces 2.pdf = Interface2\2 - C# Interfaces 2.pdf
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interface1", "Interface1\Interface1\Interface1.csproj", "{FDD71EC0-5CD0-4C47-8006-030ED6BF94B2}"
 EndProject
