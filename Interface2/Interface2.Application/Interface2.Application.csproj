@@ -4,15 +4,17 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{FDD71EC0-5CD0-4C47-8006-030ED6BF94B2}</ProjectGuid>
-    <OutputType>Library</OutputType>
+    <ProjectGuid>{46C24B3D-8A4D-430F-B7E1-FF80B38B6F32}</ProjectGuid>
+    <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Interface1</RootNamespace>
-    <AssemblyName>Interface1</AssemblyName>
+    <RootNamespace>Interface2.Application</RootNamespace>
+    <AssemblyName>Interface2.Application</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -22,6 +24,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -40,10 +43,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DoDickey.cs" />
-    <Compile Include="DoHickey.cs" />
-    <Compile Include="IDoThings.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Solutions\Interfaces2Solution\Vehicles\Vehicles.csproj">
+      <Project>{79D871C1-4831-42C5-87D4-1F1849C1EAD6}</Project>
+      <Name>Vehicles</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Interface2\Interface2.csproj">
+      <Project>{866f9178-4382-49d0-91fe-acef7e0be06c}</Project>
+      <Name>Interface2</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
