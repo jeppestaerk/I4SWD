@@ -8,25 +8,36 @@ namespace GoFObserverStocksApplication
         {
             Portfolio johnDoePortfolio = new Portfolio("John");
             Portfolio richardRoePortfolio = new Portfolio("Richard");
+
             Stock hugoStock = new Stock("Hugo", 1.50);
-
-            hugoStock.Attach(johnDoePortfolio);
-            hugoStock.Attach(richardRoePortfolio);
-
-            hugoStock.Price = 1.55;
-            hugoStock.Price = 1.60;
-
-            hugoStock.Detach(richardRoePortfolio);
-
             Stock oswalStock = new Stock("Oswal", 0.50);
 
-            oswalStock.Attach(richardRoePortfolio);
+            johnDoePortfolio.AddStock(hugoStock, 10);
+            johnDoePortfolio.AddStock(oswalStock, 7);
 
+            richardRoePortfolio.AddStock(oswalStock, 15);
+            richardRoePortfolio.AddStock(hugoStock, 15);
+
+            johnDoePortfolio.print();
+            richardRoePortfolio.print();
+
+            hugoStock.Price = 1.55;
             oswalStock.Price = 2.50;
 
-            oswalStock.Attach(johnDoePortfolio);
+            johnDoePortfolio.print();
+            richardRoePortfolio.print();
 
+            johnDoePortfolio.RemoveStock(oswalStock, 50);
+            johnDoePortfolio.RemoveStock(oswalStock, 7);
+            johnDoePortfolio.AddStock(hugoStock, 10);
+            richardRoePortfolio.RemoveStock(hugoStock, 4);
+
+            hugoStock.Price = 1.60;
             oswalStock.Price = 3.45;
+
+            johnDoePortfolio.print();
+            richardRoePortfolio.print();
+            
         }
     }
 }

@@ -5,7 +5,7 @@ namespace CardGame.Player
 {
     public class Player : IPlayer
     {
-        public Player(string name, )
+        public Player(string name)
         {
 
         }
