@@ -96,6 +96,21 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interface1.Application", "I
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Interface2.Application", "Interface2\Interface2.Application\Interface2.Application.csproj", "{46C24B3D-8A4D-430F-B7E1-FF80B38B6F32}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GoFTemplate", "GoFTemplate", "{ED685E7B-ECEA-42DB-9185-6BC4FDAA69F5}"
+	ProjectSection(SolutionItems) = preProject
+		GoFTemplate\Heap management - Template Method and Strategy.pdf = GoFTemplate\Heap management - Template Method and Strategy.pdf
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GoFStrategy", "GoFStrategy", "{F362F0FF-D38D-4CBA-BBAD-5AFF0DC6F0A5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GoFFactories", "GoFFactories", "{9D006FC3-E8E3-4E4D-BA00-8E59F89B5D03}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "GoFAbstractFactories", "GoFAbstractFactories", "{3DFFCAA0-4132-4EE2-8B91-35BA2AD7AAEA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeapManagement", "GoFTemplate\HeapManagement\HeapManagement.csproj", "{900D04DD-6321-433B-BF5E-346A91BF2740}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HeapManagement.Test.Unit", "GoFTemplate\HeapManagement.Test.Unit\HeapManagement.Test.Unit.csproj", "{C62F9E00-10FC-4E4B-B1AF-C2AC84B2AEB8}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -276,6 +291,22 @@ Global
 		{46C24B3D-8A4D-430F-B7E1-FF80B38B6F32}.Release|Any CPU.Build.0 = Release|Any CPU
 		{46C24B3D-8A4D-430F-B7E1-FF80B38B6F32}.Release|x86.ActiveCfg = Release|Any CPU
 		{46C24B3D-8A4D-430F-B7E1-FF80B38B6F32}.Release|x86.Build.0 = Release|Any CPU
+		{900D04DD-6321-433B-BF5E-346A91BF2740}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{900D04DD-6321-433B-BF5E-346A91BF2740}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{900D04DD-6321-433B-BF5E-346A91BF2740}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{900D04DD-6321-433B-BF5E-346A91BF2740}.Debug|x86.Build.0 = Debug|Any CPU
+		{900D04DD-6321-433B-BF5E-346A91BF2740}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{900D04DD-6321-433B-BF5E-346A91BF2740}.Release|Any CPU.Build.0 = Release|Any CPU
+		{900D04DD-6321-433B-BF5E-346A91BF2740}.Release|x86.ActiveCfg = Release|Any CPU
+		{900D04DD-6321-433B-BF5E-346A91BF2740}.Release|x86.Build.0 = Release|Any CPU
+		{C62F9E00-10FC-4E4B-B1AF-C2AC84B2AEB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C62F9E00-10FC-4E4B-B1AF-C2AC84B2AEB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C62F9E00-10FC-4E4B-B1AF-C2AC84B2AEB8}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{C62F9E00-10FC-4E4B-B1AF-C2AC84B2AEB8}.Debug|x86.Build.0 = Debug|Any CPU
+		{C62F9E00-10FC-4E4B-B1AF-C2AC84B2AEB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C62F9E00-10FC-4E4B-B1AF-C2AC84B2AEB8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C62F9E00-10FC-4E4B-B1AF-C2AC84B2AEB8}.Release|x86.ActiveCfg = Release|Any CPU
+		{C62F9E00-10FC-4E4B-B1AF-C2AC84B2AEB8}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -309,5 +340,7 @@ Global
 		{866F9178-4382-49D0-91FE-ACEF7E0BE06C} = {BEA7DC0D-69D7-4827-9FFA-8496B64CDE82}
 		{7BA756D2-BF6D-4DAC-AD9B-D0B937F91D51} = {0A88F96E-5D2D-432E-9934-395FECB80D24}
 		{46C24B3D-8A4D-430F-B7E1-FF80B38B6F32} = {BEA7DC0D-69D7-4827-9FFA-8496B64CDE82}
+		{900D04DD-6321-433B-BF5E-346A91BF2740} = {ED685E7B-ECEA-42DB-9185-6BC4FDAA69F5}
+		{C62F9E00-10FC-4E4B-B1AF-C2AC84B2AEB8} = {ED685E7B-ECEA-42DB-9185-6BC4FDAA69F5}
 	EndGlobalSection
 EndGlobal
